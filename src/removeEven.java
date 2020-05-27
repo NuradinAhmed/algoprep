@@ -1,31 +1,28 @@
 public class removeEven {
-    public static int[] removeEven(int[] arr) {
-        int oddElements = 0;
-
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] % 2 == 0)
-            oddElements++;
-        }
-        //Top one verifies the array elements and increaments
-
-      //  int[] result = new int[oddElements];
-        int [] result = new int[oddElements];
-        int result_index = 0;
-
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] % 2 != 0)
-           //     result_index++;
-           // result[result_index++] = arr[i];
-             //   result_index = arr[i];
-
-            result[result_index++] = arr[i];
-
-        }
 
 
+            public static int[] removeEven(int[] arr) {
 
-    return result;
-    }
+
+//                int oddElements = 0;
+//
+//                for(int i = 0; i < arr.length; i++) {
+//                    if (arr[i] % 2 != 0)
+//                    oddElements++;
+//                }
+
+               //then we want to create an resultArray with the size of the oddlements
+                int[] result = new int[10];
+                int result_index = 0;
+
+                //put add value to the reuslted array
+                for(int i = 0; i < arr.length; i++){
+                    if(arr[i] % 2 != 0)
+                    result[result_index++] = arr[i];
+                }
+                return result; // change this and return the correct result array
+            }
+
 
     public static void main(String args[]) {
 
